@@ -23,7 +23,7 @@ Author URI: http://themeforest.net/user/surjithctly
 9. CONTACT
 10. FOOTER
 11. MODAL SIGNIN / SIGNUP
-12. BLOG
+12. BLOG -Deleted
 13. CUSTOM MEDIA QUERIES
 14. VERSION 1.1
 
@@ -309,6 +309,11 @@ p {
 }
 /*==========6. PLANS AND PRICING==============*/
 
+.PlanPricing #sm_font {
+	font-size: 35px;
+	line-height: 90px;
+}
+
 /* Animation */
 
 .PlanPricing {
@@ -394,8 +399,8 @@ p {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-/*==========7. COMPARE PLANS ==============*/
 
+/*==========7. COMPARE PLANS ==============*/
 .ComparePlans {
 	margin-top:20px;
 }
@@ -416,15 +421,15 @@ p {
 	list-style:none;
 }
 .ComparePlans .planHead1 {
-	height:60px;
+	height:100px;
 	background:#FFF;
 }
 .ComparePlans .planHead2 {
-	height:60px;
+	height:100px;
 	background:#2cc76a;
 }
 .ComparePlans .planHead3 {
-	height:60px;
+	height:100px;
 	background:#f45c57;
 }
 .ComparePlans .planHead2 h3, .ComparePlans .planHead3 h3 {
@@ -436,6 +441,17 @@ p {
 	padding-top:10px;
 	line-height: 1.8;
 }
+
+ .ComparePlans .planHead2 h4,  .ComparePlans .planHead3 h4 {
+ 	color:#FFF;
+ 	text-align:center;
+ 	padding:0;
+ 	margin:0;
+	text-transform:uppercase;
+	padding-top:5px;
+	line-height: 1.8;
+ }
+
 .ComparePlans .pricing1 .planFeatures {
 	border-right:solid 1px #2cc76a;
 	border-left:solid 1px #2cc76a;
@@ -453,6 +469,10 @@ p {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
+}
+
+.Blank_line {
+	line-height: 3px;
 }
 /*==========8. DOMAIN SEARCH ==============*/
 
@@ -574,64 +594,6 @@ address {
 .LoginSignup .btn {
 	width:100%;
 	margin:0;
-}
-/*==========12. BLOG ==============*/
-
-.blogpost {
-	margin-bottom:30px;
-}
-.blogpost img {
-	padding:10px 0;
-	max-width:100%;
-	min-width:100%;
-}
-.blog h1.title {
-	font-size:30px;
-	line-height:32px;
-}
-.blog h3.subtitle {
-	font-size:16px;
-	font-weight:normal;
-	line-height:20px;
-	padding-bottom:5px;
-	margin-top: 0;
-	color: #5F5F5F;
-}
-.bloglist {
-	margin:0;
-	padding:0;
-	list-style:none;
-}
-.bloglist li {
-	padding:5px 0;
-	color:#666;
-}
-.bloglist li a {
-	color:#666;
-}
-.commentform input {
-	height: 40px;
-}
-.commentform textarea {
-	height:150px;
-}
-.commentform p {
-	text-align:right;
-}
-.commentform .btn {
-	margin-right:0;
-}
-.media-list p {
-	margin-bottom:30px;
-}
-.media-list .timestamp {
-	font-size:12px;
-	color:#999;
-	display:block;
-	padding:5px 0;
-}
-
-
 
 /*==========13. CUSTOM MEDIA QUERIES==============*/
 
