@@ -42,7 +42,7 @@ body {
 	position:relative;
 }
 a {
-	color:#2cc76a;
+	color:#93BA55;
 }
 a:hover, a:focus {
 	color:#1eb45a;
@@ -54,7 +54,10 @@ p {
 	color: #70747A;
 }
 /*==========1. HEADER==============*/
-
+.navbar-brand img {
+	height: 130px;
+	margin-top: -40px;
+}
 .navbar-header {
 	min-height:80px;
 }
@@ -72,13 +75,13 @@ p {
 	color: #fff;
 	/*text-align: center;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);*/
-	background:url(../images/header-bg.jpg) no-repeat #232a31; /* Old browsers */
+	background:url(../images/header-bg.jpg) no-repeat #333333; /* Old browsers */
 	height:630px;
 	background-size:cover;
 	overflow:hidden;
 }
 .navbar {
-	background:	#232a31;
+	background:	#333333;
 	border-bottom: 0;
 }
 .navbar-collapse {
@@ -101,7 +104,7 @@ p {
 }
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
 	background:none;
-	color:#2cc76a;
+	color:#93BA55;
 	-webkit-box-shadow:none;
 	-moz-box-shadow:none;
 	box-shadow:none;
@@ -125,7 +128,7 @@ p {
 	margin:5px 10px;
 }
 .btn-success {
-	background-color: #2cc76a;
+	background-color: #93BA55;
 	background-image:none;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
@@ -214,10 +217,31 @@ p {
 	box-shadow:none;
 	text-align: center;
 }
+.img-thumbnail object{
+	width: 100px;
+	height: 100px;
+}
 .img-thumbnail h4, .img-thumbnail p {
 	text-align:center;
 }
+
+#reliability {
+	margin-left: -30px;
+	margin-right: 30px;
+}
+
 /*==========3. MORE FEATURES==============*/
+
+/* .content_2 {
+	background: url(../images/more_features-background.jpg) no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+}
+*/
 
 .PageHead {
 	margin-top:50px;
@@ -235,13 +259,17 @@ p {
 	margin:25px 0;
 	float:left;
 }
-.features img {
-	float:left;
+.features object {
+	float: left;
 	padding:10px 20px 0 0;
+	width: 80px;
+	height: 80px;
 }
 .features p {
 	padding-left: 80px;
 }
+
+
 /*==========4. FEATURES LAYOUT==============*/
 
 .FeatLayout {
@@ -313,6 +341,9 @@ p {
 	font-size: 35px;
 	line-height: 90px;
 }
+.planFeatures ul li object {
+	width: 18px;
+}
 
 /* Animation */
 
@@ -341,7 +372,7 @@ p {
 	text-align:center;
 }
 .PlanPricing .price {
-	background:#2cc76a;
+	background:#93BA55;
 	padding:5px;
 	color:#FFF;
 	font-size:42px;
@@ -426,13 +457,17 @@ p {
 }
 .ComparePlans .planHead2 {
 	height:100px;
-	background:#2cc76a;
+	background:#93BA55;
 }
 .ComparePlans .planHead3 {
 	height:100px;
-	background:#f45c57;
+	background:#2C96D9;
 }
-.ComparePlans .planHead2 h3, .ComparePlans .planHead3 h3 {
+.ComparePlans .planHead4 {
+	height:100px;
+	background:#E06327;
+}
+.ComparePlans .planHead2 h3, .ComparePlans .planHead3 h3, .ComparePlans .planHead4 h3 {
 	color:#FFF;
 	text-align:center;
 	padding:0;
@@ -442,7 +477,7 @@ p {
 	line-height: 1.8;
 }
 
- .ComparePlans .planHead2 h4,  .ComparePlans .planHead3 h4 {
+ .ComparePlans .planHead2 h4,  .ComparePlans .planHead3 h4, .ComparePlans .planHead4 h4{
  	color:#FFF;
  	text-align:center;
  	padding:0;
@@ -453,12 +488,16 @@ p {
  }
 
 .ComparePlans .pricing1 .planFeatures {
-	border-right:solid 1px #2cc76a;
-	border-left:solid 1px #2cc76a;
+	border-right:solid 1px #93BA55;
+	border-left:solid 1px #93BA55;
 }
 .ComparePlans .pricing2 .planFeatures {
-	border-right:solid 1px #f45c57;
-	border-left:solid 1px #f45c57;
+	border-right:solid 1px #2C96D9;
+	border-left:solid 1px #2C96D9;
+}
+.ComparePlans .pricing3 .planFeatures {
+	border-right:solid 1px #E06327;
+	border-left:solid 1px #E06327;
 }
 .ComparePlans .btn {
 	width:100%;
@@ -470,7 +509,18 @@ p {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-
+.ComparePlans .pricing2 .btn{
+	background-color: #2C96D9;
+}
+.ComparePlans .pricing3 .btn{
+	background-color: #E06327;
+}
+.ComparePlans .pricing2 .btn:hover{
+	background-color: #007CD9!important;
+}
+.ComparePlans .pricing3 .btn:hover{
+	background-color: #E04900!important;
+}
 .Blank_line {
 	line-height: 3px;
 }
@@ -544,7 +594,7 @@ address {
 .footer {
 	position: relative;
 	color: #fff;
-	background:url(../images/header-bg.jpg) no-repeat #232a31;
+	background:url(../images/header-bg.jpg) no-repeat #333333;
 	background-size:cover;
 	overflow:hidden;
 	margin-top:80px;
@@ -575,6 +625,11 @@ address {
 .copyright {
 	margin:30px 0;
 }
+.copyright div img {
+	height: 70px;
+	margin-top: -30px;
+}
+
 /*==========11. MODAL SIGNIN / SIGHUP ==============*/
 
 
@@ -594,7 +649,7 @@ address {
 .LoginSignup .btn {
 	width:100%;
 	margin:0;
-
+}
 /*==========13. CUSTOM MEDIA QUERIES==============*/
 
 
